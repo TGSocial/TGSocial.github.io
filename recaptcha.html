@@ -1,0 +1,22 @@
+ <html>
+ <script src="https://www.google.com/recaptcha/api.js"></script>
+  <script>
+   function onSubmit(token) {
+     document.getElementById("demo-form").submit();
+   }
+ </script>
+ <button class="g-recaptcha" 
+        data-sitekey="reCAPTCHA_site_key" 
+        data-callback='onSubmit' 
+        data-action='submit'>Submit</button>
+<style>
+body {
+      background-color:#2B3440;
+      color:#FFFFFF;
+      text-align:center;
+    }
+
+h1 {
+    color:#3A4DB0;
+</style>
+</html>
