@@ -20,6 +20,7 @@
   padding: 45px;
   text-align: center;
   box-shadow: 0 0 20px 0 rgba(0, 0, 0, 0.2), 0 5px 5px 0 rgba(0, 0, 0, 0.24);
+  text-transform: capitalize;
   
 }
 .form input {
@@ -32,6 +33,7 @@
   padding: 15px;
   box-sizing: border-box;
   font-size: 14px;
+  text-transform: capitalize;
   
 }
 .form button {
@@ -49,7 +51,7 @@
   -webkit-transition: all 0.3 ease;
   transition: all 0.3 ease;
   cursor: pointer;
-
+  text-transform: capitalize;
 
 }
 .form button:hover,.form button:active,.form button:focus {
