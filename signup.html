@@ -17,14 +17,21 @@
   <div class="form">
 
     <form>
-      <input type="text" placeholder="Email"/>
-      <input type="text" placeholder="Uživatelské Jméno"/>
-      <input type="password" placeholder="Nastavte Heslo"/>
+      <input type="text" id="username" placeholder="Uživatelské Jméno"/>
+      <input type="password" id="pass" placeholder="Nastavte Heslo"/>
       
     </form>
 
     <form class="login-form">
-      <button type="button" onclick="window.location.href='login.html'">REGISTROVAT</button>
+      <button type="button" onclick="window.location.href='login.html';store()">REGISTROVAT</button>
+	  <script>
+	  function store(){
+     var inputUser= document.getElementById("username");
+     localStorage.setItem("username", inputUser.value);
+	 var inputPass= document.getElementById("pass");
+     localStorage.setItem("pass", inputPass.value);
+    }
+</script>
     </form>
   </div>
 </div>
