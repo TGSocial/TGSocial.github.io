@@ -40,7 +40,30 @@ alert("Přihlásili jste se jako "+ email);
     </form>
   </div>
 </div>
+<!-- The core Firebase JS SDK is always required and must be listed first -->
+<script src="https://www.gstatic.com/firebasejs/8.2.0/firebase-app.js"></script>
 
+<!-- TODO: Add SDKs for Firebase products that you want to use
+     https://firebase.google.com/docs/web/setup#available-libraries -->
+<script src="https://www.gstatic.com/firebasejs/8.2.0/firebase-analytics.js"></script>
+
+<script>
+  // Your web app's Firebase configuration
+  // For Firebase JS SDK v7.20.0 and later, measurementId is optional
+  var firebaseConfig = {
+    apiKey: "AIzaSyChTBCMuHroP9mDp5v6UyE69Wx9y7YcdGY",
+    authDomain: "tgsocial.firebaseapp.com",
+    databaseURL: "https://tgsocial.firebaseio.com",
+    projectId: "tgsocial",
+    storageBucket: "tgsocial.appspot.com",
+    messagingSenderId: "450790713802",
+    appId: "1:450790713802:web:3fa8ab999095c746314733",
+    measurementId: "G-MJP596CWYH"
+  };
+  // Initialize Firebase
+  firebase.initializeApp(firebaseConfig);
+  firebase.analytics();
+</script>
 </body>
 </html>
 
