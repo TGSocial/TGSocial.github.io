@@ -25,12 +25,16 @@
     <form class="login-form">
       <button type="button" onclick="window.location.href='login.html';store()">REGISTROVAT</button>
 	  <script>
-	  function store(){
-     var inputUser= document.getElementById("username");
-     localStorage.setItem("username", inputUser.value);
-	 var inputPass= document.getElementById("pass");
-     localStorage.setItem("pass", inputPass.value);
-    }
+firebase.auth().createUserWithEmailAndPassword(email, password)
+  .then((user) => {
+    // Signed in 
+    // ...
+  })
+  .catch((error) => {
+    var errorCode = error.code;
+    var errorMessage = error.message;
+    // ..
+  });
 </script>
     </form>
   </div>
