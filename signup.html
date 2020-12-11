@@ -18,15 +18,16 @@
 
     <form>
       <input type="text" id="email" placeholder="Nastavte Email"/>
-      <input type="password" id="pass" placeholder="Nastavte Heslo"/>
+      <input type="password" id="password" placeholder="Nastavte Heslo"/>
       
     </form>
 
     <form class="login-form">
       <button type="button" onclick="window.location.href='login.html';store()">REGISTROVAT</button>
 	  <script>
-firebase.auth().createUserWithEmailAndPassword(email, pass)
+firebase.auth().createUserWithEmailAndPassword(email, password)
   .then((user) => {
+alert("Přihlásili jste se jako "+ email);
     // Signed in 
     // ...
   })
