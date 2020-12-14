@@ -49,10 +49,16 @@ a:active {
  </title>
 <body>
     <h4>jakási sociální síť</h4>
-    ahoj <div id="usernamehere"></div>!
+    ahoj <div id="usernamehere"></div>
 	<script>
 	document.getElementById("usernamehere").innerHTML = localStorage.getItem("username");
 </script>
+	<script src="https://www.google.com/recaptcha/api.js"></script>
+  <script>
+   function onSubmit(token) {
+     document.getElementById("demo-form").submit();
+   }
+ </script>
     <hr>
      
      <button type="button" onclick="window.location.href='signup.html'"><b>Registuj se</b></input>
